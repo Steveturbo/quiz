@@ -1,0 +1,18 @@
+// Quiz 
+
+// array for questions and answers
+var questions = [what is java script?]
+
+
+// If arguments
+
+
+
+//for loop for selecting questions
+
+
+
+//event listener
+
+
+// start button
