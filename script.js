@@ -1,7 +1,7 @@
 var currentQuestionIndex = 0;
 var timer = 75;
 var totalPionts = 0
-
+var timerSpan = document.querySelector("#timer");
 
 
 
@@ -83,11 +83,11 @@ function start() {
         currentQuestionIndex++;
     } else {
         alert("You finished the quiz! Your score is...")
-    }
-
-    
-    // 
+    }   
 }
+
+
+
 
 var startBtn = document.querySelector(".startBtn")
 startBtn.addEventListener("click", start);
@@ -98,6 +98,7 @@ startBtn.addEventListener("click", start);
 function timerFunction() {
 setInterval(function() {
     timer--
+    timerSpan.innerHTML = timer;
     console.log(timer);
 },1000)
 }
