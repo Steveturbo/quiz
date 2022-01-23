@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title></title>
 </head>
-<body>
-    <button class="startBtn">Start</button>
+<header>
+    
 
-    <h2 id="question-text">Question Text</h2>
-    <button id="choice0-btn">Choice 0</button>
-    <button id="choice1-btn">Choice 1</button>
-    <button id="choice2-btn">Choice 2</button>
-    <button id="choice3-btn">Choice 3</button>
+</header>
+
+
+<body>
+  <div class="hero">
+      <div class="controls">
+       <button id=start-btn class="startBtn">Start Quiz </button>
+      </div> 
+      <div id="question-card" class="hide">
+       <h2 id="question-text">Question Text</h2>
+       <div id="answerButtons" class="button-grid">
+       <button id="choice0-btn">Choice 0</button>
+       <button id="choice1-btn">Choice 1</button>
+       <button id="choice2-btn">Choice 2</button>
+       <button id="choice3-btn">Choice 3</button>
+      </div>
+     
+  </div> 
 
     <script src="script.js"></script>
 </body>

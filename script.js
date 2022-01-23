@@ -1,4 +1,9 @@
 var currentQuestionIndex = 0;
+var timer = 75;
+var totalPionts = 0
+
+
+
 
 var questionArray = [
     {
@@ -13,6 +18,7 @@ var questionArray = [
         // choice4: 6,
     }, {
         text: "What is 10 + 10",
+        correctAnswer: 20,
         choices: [
             25, 50, 90, 20
         ],
@@ -20,7 +26,6 @@ var questionArray = [
         // choice2: 50,
         // choice3: 90,
         // choice4: 20,
-        correctAnswer: 20
     }, {
         text: "Third question",
         choices: [
@@ -45,12 +50,13 @@ function checkAnswer(event) {
 
     if(selectedAnswer == correctAnswer) {
         alert("Correct!")
-
+        totalPionts +=15;
+ console.log(totalPionts);
 
 
     } else {
         alert("Wrong!")
-        
+        timer -=10;
     }
 
     
@@ -89,3 +95,10 @@ startBtn.addEventListener("click", start);
 // document.querySelector(".startBtn").addEventListener("click", start)
 
 
+function timerFunction() {
+setInterval(function() {
+    timer--
+    console.log(timer);
+},1000)
+}
+timerFunction();

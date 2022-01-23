@@ -1,0 +1,19 @@
+header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+
+
+.hero {
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-width: 5px;
+  border-color: red;
+}
