@@ -8,23 +8,28 @@
     <title></title>
 </head>
 <header>
-    
-
+    <div id="highscoresDiv">
+        <button type="button" class="button" id="highscore">
+         View highscores
+        </button>
+    </div>
+    <div class="header">
+        <h3>Steve's Quiz</h3>
+    </div>       
+    <div id="timerDiv">Time Left : <span id="timer"></span></div>
 </header>
-
-
 <body>
   <div class="hero">
       <div class="controls">
-       <button id=start-btn class="startBtn">Start Quiz </button>
-      </div> 
+       <button id=start-btn class="startBtn">Start Quiz</button>
+      </div>
       <div id="question-card" class="hide">
        <h2 id="question-text">Question Text</h2>
        <div id="answerButtons" class="button-grid">
-       <button id="choice0-btn">Choice 0</button>
-       <button id="choice1-btn">Choice 1</button>
-       <button id="choice2-btn">Choice 2</button>
-       <button id="choice3-btn">Choice 3</button>
+       <button class="button" id="choice0-btn">Choice 0</button>
+       <button class="button" id="choice1-btn">Choice 1</button>
+       <button class="button" id="choice2-btn">Choice 2</button>
+       <button class="button" id="choice3-btn">Choice 3</button>
       </div>
      
   </div> 
