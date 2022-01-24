@@ -14,15 +14,6 @@ body {
 
 
 
-header {
-    padding: 20px 35px;
-    background-color: #39a6b2;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-
 
 .hero {
   width: 800px;
@@ -38,10 +29,25 @@ header {
  grid-template-columns:repeat(2, auto);
  gap: 10px;
  margin: 20px 0;
+ }
+
+
+
+.controls {
+  display:grid;
+ grid-template-columns:repeat(2, auto);
+ gap: 10px;
+ margin: 20px 0;
+}
+
+.startBtn {
+  background-color: #d46969;
+  gap: 10px;
+ margin: 20px 0;
 }
 
 .button {
-
+background-color: #d46969;
 }
 
 #timerDiv {
@@ -50,7 +56,8 @@ header {
   color: #911c1c;
 }
 
-.pageName {
-  justify-content: center;
-  text-color: 
+#next-btn {
+  background-color: #d46969;
+  gap: 10px;
+ margin: 20px 0;
 }
