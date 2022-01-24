@@ -41,14 +41,14 @@ body {
 }
 
 .startBtn {
-  background-color: #d46969;
+  background-color: tan;
   gap: 10px;
  margin: 20px 0;
 }
 
 .button {
-background-color: #d46969;
-}
+background-color: tan;
+
 
 #timerDiv {
   float: left;
@@ -56,8 +56,13 @@ background-color: #d46969;
   color: #911c1c;
 }
 
-#next-btn {
-  background-color: #d46969;
+.nextBtn {
+  background-color: tan;
+  gap: 10px;
   gap: 10px;
  margin: 20px 0;
+}
+
+.hide {
+  display: none;
 }

@@ -73,16 +73,19 @@ function checkAnswer(event) {
 
 
 function start() {
-
+    
     if(currentQuestionIndex < questionArray.length ) {
         // alert(questionArray[currentQuestionIndex].text)
         var textH2 = document.querySelector("#question-text");
         textH2.textContent = questionArray[currentQuestionIndex].text;
 
+        timerFunction();
+
         for (let i = 0; i < 4; i++) {
             var choiceBtn = document.querySelector("#choice"+i+"-btn");
             choiceBtn.textContent = questionArray[currentQuestionIndex].choices[i];
             choiceBtn.addEventListener("click", checkAnswer)
+            
         }
 
         currentQuestionIndex++;
@@ -97,6 +100,7 @@ function start() {
 var startBtn = document.querySelector(".startBtn")
 startBtn.addEventListener("click", start);
 
+
 // document.querySelector(".startBtn").addEventListener("click", start)
 
 
@@ -107,7 +111,7 @@ setInterval(function() {
     console.log(timer);
 },1000)
 }
-timerFunction();
+
 
 
 
