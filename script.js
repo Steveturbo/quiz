@@ -1,8 +1,8 @@
 var currentQuestionIndex = 0;
 var timer = 75;
-var totalPionts = 0
+var totalPoints = 0
 var timerSpan = document.querySelector("#timer");
-
+var pointsSpan = document.querySelector("#score");
 
 
 var questionArray = [
@@ -50,8 +50,8 @@ function checkAnswer(event) {
 
     if(selectedAnswer == correctAnswer) {
         alert("Correct!")
-        totalPionts +=15;
- console.log(totalPionts);
+        totalPoints +=15;
+        console.log(totalPoints);
 
 
     } else {
@@ -76,10 +76,6 @@ function start() {
             choiceBtn.addEventListener("click", checkAnswer)
         }
 
-       
-
-
-
         currentQuestionIndex++;
     } else {
         alert("You finished the quiz! Your score is...")
@@ -103,3 +99,4 @@ setInterval(function() {
 },1000)
 }
 timerFunction();
+
